@@ -11,14 +11,31 @@
   The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)*
 
 ## Setting up background image
+```
+  background-image: url /*url('URL')*/
+                    none /**default*/
+                    initial /*Sets this property to its default value*/
+                    inherit /**Inherits this property from its parent element*/
+                    linear-gradient(red, yellow)
+                    repeating-linear-gradient(rgb)
+                    conic-gradient()
+                    radial-gradient()
+    
+  /* Used if the image is unavailable */
+  background-color: name_of_color
+                    rgba
+                    Hex
+                    hsl  
+```
 
-.background-image {
-  background-image: url|none|initial|inherit ->  url("photographer.jpg"); /* The image used */ 
-  background-color: name_of_color|rgba|Hex|hsl -> #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
+```
+background-repeat: repeat /**default, repeat over both axis x as well as y*/
+                   no-repeat 
+                   repeat-x /* repeat over x- axis**/
+                   repeat-y
+```
 
+```
+background-position: center; /* Center the image */
+```
 
