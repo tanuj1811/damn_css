@@ -10,5 +10,15 @@
   Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
   The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)*
 
-## Background Image
+## Setting up background image
+
+.background-image {
+  background-image: url|none|initial|inherit ->  url("photographer.jpg"); /* The image used */ 
+  background-color: name_of_color|rgba|Hex|hsl -> #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 
