@@ -11,6 +11,12 @@
   The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)*
 
 ## Setting up background image
+
+```
+background: background-color background-image background-repeat background-attachment background-position;
+```
+
+#### Backgorund Color and Image
 ```
   background-image: url /*url('URL')*/
                     none /**default*/
@@ -27,15 +33,46 @@
                     Hex
                     hsl  
 ```
-
+#### Backgorund Repeat
 ```
 background-repeat: repeat /**default, repeat over both axis x as well as y*/
                    no-repeat 
                    repeat-x /* repeat over x- axis**/
                    repeat-y
+                   space	 //down
+                   round	  //The background-image is repeated and squished or stretched to fill the space
+                   initial // 	Sets this property to its default value
+                   inherit
 ```
+*space -> The background-image is repeated as much as possible without clipping. The first and last image is pinned to either side of the element, and whitespace is distributed evenly between the images*
 
+#### Backgorund Attachment
 ```
-background-position: center; /* Center the image */
+background-attachment: //specifies whether the background image should scroll or be fixed (will not scroll with page)
+                       fixed // background stays in the same place when scrolling
+                       scroll //background moves with the rest of content when scrolling
+                       local	//background moves within the local element when the local element's scroll bar is being moved
 ```
+![image](https://user-images.githubusercontent.com/54256549/170739149-2c633075-580e-4a16-85ef-e928df34b6ff.png)
+
+#### Backgorund position
+```
+background-position: /*sets the starting position of a background image*/
+                     left top //default
+                     left center
+                     left bottom
+                     right top
+                     right center
+                     right bottom
+                     center top
+                     center center
+                     center bottom
+                     x% y% //down
+                     xpx ypx
+                     initial	// Sets this property to its default value
+                     inherit	// Inherits this property from its parent element
+                     
+```
+*x% y% -> The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%*
+
 
