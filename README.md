@@ -75,4 +75,76 @@ background-position: /*sets the starting position of a background image*/
 ```
 *x% y% -> The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%*
 
+#### Background Clip
+```
+background-clip: // defines how far the background (color or image) should extend within an element
+                border-box	//default value. The background extends behind the border	
+                padding-box	//The background extends to the inside edge of the border	
+                content-box	//The background extends to the edge of the content box	
+                initial	
+                inherit
+```
+
+#### Background origin
+```
+Note: This property has no effect if background-attachment is "fixed".
+background-origin: /* specifies the origin position (the background positioning area) of a background image */
+                   padding-box	//default value, The background image starts from the upper left corner of the padding edge	
+                   border-box	// The background image starts from the upper left corner of the border, padding area will also covered
+                   content-box	// The background image starts from the upper left corner of the content	
+                   initial	// Sets this property to its default value
+                   inherit	// Inherits this property from its parent element. Read about inherit
+```
+
+## CSS Bording 
+
+```
+border-style: //specifies what kind of border to display
+              dotted - Defines a dotted border
+              dashed - Defines a dashed border
+              solid - Defines a solid border
+              double - Defines a double border
+              groove - Defines a 3D grooved border. The effect depends on the border-color value
+              ridge - Defines a 3D ridged border. The effect depends on the border-color value
+              inset - Defines a 3D inset border. The effect depends on the border-color value
+              outset - Defines a 3D outset border. The effect depends on the border-color value
+              none - Defines no border
+              hidden - Defines a hidden border
+```
+
+## Margins
+*You can set the margin property to auto to horizontally center the element within its container*
+```
+margin: margin-top margin-right margin-bottom margin-left;
+
+margin: margin-top margin-right and margin-left margin-bottom; e.g margin: 25px 30px 45px
+
+margin: margin-top and margin-bottom  right and left margin;
+```
+
+## Padding
+
+```
+padding: padding-top padding-right padding-bottom padding-left;
+
+padding: padding-top padding-right and padding-left padding-bottom; e.g padding: 25px 30px 45px
+
+padding: padding-top and padding-bottom  right and left padding;
+```
+**Note**
+*if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result*
+exapmle
+```
+div {
+  width: 300px;
+  padding: 25px;
+}
+Here, the <div> element is given a width of 300px.
+However, the actual width of the <div> element will be 350px 
+(300px + 25px of left padding + 25px of right padding)
+```
+*To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width*
+``
+box-sizing: border-box;
+``
 
