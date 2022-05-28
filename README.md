@@ -197,3 +197,36 @@ text-decoration-style: solid|double|dotted|dashed|wavy|initial|inherit;
 
 text-decoration-thickness: auto|from-font|length/percentage|initial|inherit;
 ```
+#### Test Indent
+
+The ``text-indent`` property specifies the indentation/space of the first line in a text-block.
+
+*Note: Negative values are allowed. The first line will be indented to the left if the value is negative*
+
+```
+text-indent : length|initial|inherit;
+```
+![image](https://user-images.githubusercontent.com/54256549/170817093-1e6e815e-6df0-437f-aed1-061ab798b1de.png)
+
+#### Test Transform
+```
+line-height: 
+             normal 
+             number //A number that will be multiplied with the current font-size to set the line height
+             length //A fixed line height in px, pt, cm, etc.
+             x% //A line height in percent of the current font size
+             initial
+             inherit
+letter-spacing: //letter-spacing property increases or decreases the space between characters
+                normal
+                length
+                initial
+                inherit
+
+text-transform: none	//No capitalization. The text renders as it is. This is default	
+                capitalize	//Transforms the first character of each word to uppercase	
+                uppercase	//Transforms all characters to uppercase	
+                lowercase	//Transforms all characters to lowercase	
+                initial	//Sets this property to its default value. Read about initial	
+                inherit	//Inherits this property from its parent element. Read about inherit
+```
