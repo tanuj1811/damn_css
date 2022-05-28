@@ -313,5 +313,42 @@ align-items: //difines the alignment along with cross-axis(y-axis).Think of it a
 
 **For both justify-content and align-items** *The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords (although note browser support), and deal with helping you prevent aligning elements such that the content becomes inaccessible.*
 
+```
+align-content : // align-items works on signle whole row. if there are multiple row this help to adjust them
+                normal (default)
+                flex-start / start: items packed to the start of the container. The (more supported) flex-start honors the flex-direction while start honors the writing-mode direction.
+                flex-end / end: items packed to the end of the container. The (more support) flex-end honors the flex-direction while end honors the writing-mode direction.
+                center: items centered in the container
+                space-between: items evenly distributed; the first line is at the start of the container while the last one is at the end
+                space-around: items evenly distributed with equal space around each line
+                space-evenly: items are evenly distributed with equal space around them
+                stretch: lines stretch to take up the remaining space
+```
+![image](https://user-images.githubusercontent.com/54256549/170840215-42a2b1bc-d7f7-4270-8555-39f27227819b.png)
+![image](https://user-images.githubusercontent.com/54256549/170840128-dc488804-c519-4bf3-a252-9e82c5632852.png)
 
+```
+gap: row-gap coloumn-gap
 
+row-gap: xpx;
+column-gap: xpx;
+```
+
+```
+order: //the order property controls the order in which they appear in the flex container
+       x px
+```
+
+```
+flex : none or flex-grow flex-shrink flex-basis
+
+flex-glow : // it indicate how much that flex item can increasse it size
+            0  -> not increase at all, default
+            greater than 1 // left over spaces are cal. and then divided into their %age e.g if flex glow=2 it will get twice the size of that free space
+            
+flex-shrink: //defines the ability for a flex item to shrink if necessary 
+             1 default 
+             0 no shinking allowed
+             greater than 1
+```
+**Resource for flex tutorial is : yt(web made simplified** or https://css-tricks.com/snippets/css/a-guide-to-flexbox/
