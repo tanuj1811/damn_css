@@ -243,3 +243,75 @@ text-shadow: h-shadow v-shadow blur-radius color
              xpx ypx // horizontal shadow (xpx) and the vertical shadow (ypx)
              h-shadow v-shadow blur-radius
 ```
+
+## Display
+
+```
+ display: 
+```
+
+#### Block
+*An element that has the display property set to block starts on a new line and takes up the available screen width*
+
+You can specify the width and heigh properties for such elements. 
+
+Examples of elements that are at block-level by default are ``<div> <section> <p>``, and lots more
+
+#### Inline
+*An element with a display property set to inline will not start on a new line and it will take up the remaining/available screen width. It just takes up the space such an element would normally take*
+
+you can't set the width and height of an element that has a display of inline, becuase it does not take up the whole screen width.
+
+Some elements are inline by default, like ``<span>, <a>, <i>, and <img>``
+
+#### Inline-block
+
+*An element you assign a display of inline-block is inline by presentation. But it has the added advantage of you being able to apply width and height to it, which you can't do when the element is assigned a dispaly of inline.*
+
+#### Flex
+
+**Note :** *Its works on 2-axis i.e x-axis as ``main-axis`` and y-asix as ``cross-axis``*
+**Note :** *Setting flex-direction as coloum it switch the main-axis to cross-axis and vica-versa. More formally ``justify-content and align-items`` are swtiched*
+
+```
+flex-direction: 
+               row (default): left to right 
+               row-reverse: right to left
+               column: same as row but top to bottom
+               column-reverse: same as row-reverse but bottom to top
+```
+```
+flex-wrap: 
+          nowrap (default): all flex items will be on one line. try to shink or overflow if more shinking is not possible
+          wrap: flex items will wrap onto multiple lines, from top to bottom.
+          wrap-reverse: flex items will wrap onto multiple lines from bottom to top. 
+```
+
+**Node :** *you can use ``flex-flow`` as a shorthand for the flex-direction and flex-wrap <br/>e.g:``flex-flow: column wrap``*
+
+```
+justify-content: // defines the alignment along the main axis
+                  flex-start/start (default)
+                  flex-end/end: items are packed toward the end of the flex-direction.
+                  left: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+                  right: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+                  center: items are centered along the line through only main-axis
+                  space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+                  space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+                  space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+
+```
+```
+align-items: //difines the alignment along with cross-axis(y-axis).Think of it as the justify-content version for the cross-axis
+             stretch (default): stretch to fill the container (still respect min-width/max-width)
+             flex-start / start / self-start: items are placed at the start of the cross axis. 
+             flex-end / end / self-end: items are placed at the end of the cross axis. 
+             center: items are centered in the cross-axis
+             baseline: items are aligned such as their baselines align
+
+```
+
+**For both justify-content and align-items** *The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords (although note browser support), and deal with helping you prevent aligning elements such that the content becomes inaccessible.*
+
+
+
