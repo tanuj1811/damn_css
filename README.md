@@ -148,3 +148,52 @@ However, the actual width of the <div> element will be 350px
 box-sizing: border-box;
 ``
 
+## Outline
+
+*An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out"*
+```
+outline : outline-width outline-style(required) outline-color
+```
+
+## Text
+*The text-align property is used to set the horizontal alignment of a text*
+*The ``vertical-align`` property sets the vertical alignment of an element*
+
+```
+text-align: left 
+            right 
+            centered 
+            justified /*stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers)*/
+
+vertical-align: 
+                baseline	//default, The element is aligned with the baseline of the parent.
+                sub	 //The element is aligned with the subscript baseline of the parent	
+                super	//The element is aligned with the superscript baseline of the parent
+                xpx|xcm	//Raises or lower an element by the specified length. Negative values are allowed. Read about length units	
+                x%	//Raises or lower an element by a percent of the "line-height" property. Negative values are allowed
+                
+vertical-align: baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+```
+The ``text-align-last`` property specifies how to align the last line of a text
+
+The ``direction`` property specifies the text direction/writing direction within a block-level element.
+
+```
+direction: ltr|rtl|initial|inherit;
+           ltr	//default, Text direction goes from left-to-right	
+           rtl	//Text direction goes from right-to-left	
+           initial	
+           inherit	
+```
+
+```
+text-decoration: text-decoration-line text-decoration-color text-decoration-style text-decoration-thickness 
+
+text-decoration-line: none|underline|overline|line-through|initial|inherit;
+
+text-decoration-color: color|initial|inherit;
+
+text-decoration-style: solid|double|dotted|dashed|wavy|initial|inherit;
+
+text-decoration-thickness: auto|from-font|length/percentage|initial|inherit;
+```
