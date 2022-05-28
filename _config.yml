@@ -6,10 +6,10 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Damn CSS
 
 # Your name to show in the footer
-author: Some Person
+author: Tanuj Sharma
 
 # --- List of links in the navigation bar --- #
 
@@ -24,10 +24,10 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+# round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -82,7 +82,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "https:tanuj1811.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -250,8 +250,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
-  - docs/
+  - roots/
 
 plugins:
   - jekyll-paginate
