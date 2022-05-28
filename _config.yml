@@ -249,8 +249,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
-  - roots/
+  - docs/
 
 plugins:
   - jekyll-paginate
