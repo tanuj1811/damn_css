@@ -229,4 +229,17 @@ text-transform: none	//No capitalization. The text renders as it is. This is def
                 lowercase	//Transforms all characters to lowercase	
                 initial	//Sets this property to its default value. Read about initial	
                 inherit	//Inherits this property from its parent element. Read about inherit
+
+white-space: // helps control how whitespace and line breaks within an element's text are treated
+              normal
+              nowrap  //Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered
+              pre //Text will only wrap on line breaks
+              pre-line //text will wrap when necessary, and on line breaks
+              pre-wrap  //Text will wrap when necessary, and on line breaks
+              initial
+              inherit
+              
+text-shadow: h-shadow v-shadow blur-radius color
+             xpx ypx // horizontal shadow (xpx) and the vertical shadow (ypx)
+             h-shadow v-shadow blur-radius
 ```
