@@ -372,3 +372,37 @@ static : default
          it is always positioned according to the normal flow of the page
          static positioned elements are not affected by the top, bottom, left, and right properties.
 ```
+
+```
+relative : almost same as static
+           we can change position by using properties top,right, left and bottom
+           it will change it's position wrt its orginal position
+           and its original position became vacent... means doesn't occuoy by other div's
+           it's overlap the other div's
+```
+
+```
+absolute : 
+           we can change position by using properties top,right, left and bottom
+           it will change it's position wrt its last parent relative component 
+           if there is no relative positioned parent div it change wrt to main html div
+           once the absoulte position is defined html delete its existance... more formally
+           
+           and its original position became vacent... means doesn't occuoy by other div's
+           it's overlap the other div's
+```
+
+```
+fixed : almost same as absolute but
+         it always stays in the same place even if the page is scrolled
+```
+
+```
+sticky : it's the upgadation in fixed position
+         in which it's positioned based on the user's scroll position
+         A sticky element toggles between relative and fixed, 
+         depending on the scroll position. 
+         It is positioned relative until a given offset position is met in the viewport or starting of page or ending  
+         - then it "sticks" in place (like position:fixed).
+```
+*example of sticky is [navbar/header](https://codepen.io/WebDevSimplified/pen/wYmEPz)*
