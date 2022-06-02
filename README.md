@@ -147,6 +147,13 @@ However, the actual width of the <div> element will be 350px
 ``
 box-sizing: border-box;
 ``
+## Links
+*a:link - a normal, unvisited link //mostly used to convert text look like links.
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked //A link becomes active when you click on it*
+
+*``text-decoration`` property is mostly used to remove underlines*
 
 ## Outline
 
@@ -352,3 +359,16 @@ flex-shrink: //defines the ability for a flex item to shrink if necessary
              greater than 1
 ```
 **Resource for flex tutorial is : yt(web made simplified** or https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+## Postion
+
+```
+position: static | relative | absolute | fixed | sticky | inheriet;
+```
+*Elements are then positioned using the top, bottom, left, and right properties but doesn't work on static*
+```
+static : default
+         is not positioned in any special way
+         it is always positioned according to the normal flow of the page
+         static positioned elements are not affected by the top, bottom, left, and right properties.
+```
